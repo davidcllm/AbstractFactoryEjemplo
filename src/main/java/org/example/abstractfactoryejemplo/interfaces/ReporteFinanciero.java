@@ -1,5 +1,5 @@
 package org.example.abstractfactoryejemplo.interfaces;
 
 public interface ReporteFinanciero {
-    void generar(); // Por ahora solo se declara
+    double calcularUtilidad(double ingresos, double costos);
 }

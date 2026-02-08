@@ -6,11 +6,13 @@
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.abstractfactoryejemplo.HelloController">
+      fx:controller="org.example.abstractfactoryejemplo.HelloController" stylesheets="@../styles/styles.css">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label styleClass="header-label" text="Bienvenido a RestWare!" />
+
+    <Button text="Ingresar a RestWare México" onAction="#onAbrirMexico"/>
+    <Button text="Ingresar a RestWare Europa" onAction="#onAbrirMexico"/>
 </VBox>

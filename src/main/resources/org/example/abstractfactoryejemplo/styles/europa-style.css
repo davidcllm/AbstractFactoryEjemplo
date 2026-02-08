@@ -1,0 +1,39 @@
+/* Configuración General */
+.root {
+    -fx-font-family: "Bookerly", serif;
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 25;
+}
+
+/* Estilo para los Títulos */
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+/* Estilo para el Título Principal */
+.header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0d47a1; /* Azul oscuro */
+}
+
+/* Botón Azul */
+.button {
+    -fx-background-color: #1976d2; /* Azul normal */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0d47a1; /* Azul oscuro */
+}
+
+/* Color destacado para el pago total */
+#lblPagoTotal {
+    -fx-text-fill: #1976d2;
+    -fx-font-size: 16px;
+}

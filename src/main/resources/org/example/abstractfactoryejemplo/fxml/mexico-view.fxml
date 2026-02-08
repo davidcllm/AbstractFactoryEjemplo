@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.abstractfactoryejemplo.MexicoController" stylesheets="@../styles/mexico-style.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label styleClass="header-label" text="Reportes RestWare México" />
+
+    <Label text="Ingresos del mes ($)" />
+    <TextField fx:id="tfIngresosMexico" promptText="Ingrese el monto" />
+
+    <Label text="Ingrese costos de operación y gastos" />
+    <TextField fx:id="tfCostosMexico" promptText="Ingrese el monto" />
+
+    <Separator />
+
+    <Label text="Porcentaje de IVA en México: 16%" />
+
+    <Button mnemonicParsing="false" onAction="#onCalcularUtilidadMexico" text="Calcular Utilidad" />
+
+    <Separator />
+
+    <Label text="Reporte del mes: " />
+    <HBox spacing="10.0">
+        <Label text="Utilidad después de impuestos:" />
+        <Label fx:id="lblMexico" text="0.00" style="-fx-font-weight: bold;" />
+    </HBox>
+</VBox>

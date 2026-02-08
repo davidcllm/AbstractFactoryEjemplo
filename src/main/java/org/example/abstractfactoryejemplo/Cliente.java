@@ -19,7 +19,7 @@ public class Cliente {
         return interfaz.cargarVista();
     }
 
-    public void ejecutarReporte() {
-        reporte.generar();
+    public double calcularUtilidad(double ingresos, double costos) {
+        return reporte.calcularUtilidad(ingresos, costos);
     }
 }
