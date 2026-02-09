@@ -14,5 +14,5 @@
     <Label styleClass="header-label" text="Bienvenido a RestWare!" />
 
     <Button text="Ingresar a RestWare México" onAction="#onAbrirMexico"/>
-    <Button text="Ingresar a RestWare Europa" onAction="#onAbrirMexico"/>
+    <Button text="Ingresar a RestWare Europa" onAction="#onAbrirEuropa"/>
 </VBox>

@@ -16,7 +16,7 @@ public class Cliente {
     }
 
     public Parent obtenerVista() {
-        return interfaz.cargarVista();
+        return interfaz.cargarVista(this);
     }
 
     public double calcularUtilidad(double ingresos, double costos) {

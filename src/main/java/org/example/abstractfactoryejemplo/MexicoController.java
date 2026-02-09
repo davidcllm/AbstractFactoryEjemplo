@@ -11,6 +11,13 @@ public class MexicoController {
     @FXML private TextField tfCostosMexico;
     @FXML private Label lblMexico;
 
+    // Atributo para guardar la referencia al cliente
+    private Cliente clienteApp;
+
+    public void setClienteApp(Cliente cliente) {
+        this.clienteApp = cliente;
+    }
+
     // Obtenemos el reporte directamente de la fábrica de su región
     private ReporteFinanciero reporte = new MexicoFactory().crearReporte();
 

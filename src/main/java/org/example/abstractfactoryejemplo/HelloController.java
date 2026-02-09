@@ -1,6 +1,7 @@
 package org.example.abstractfactoryejemplo;
 
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -22,17 +23,23 @@ public class HelloController {
 
     private void abrirRegion(RestWareFactory factory) {
         try {
-            // Usamos la fábrica para obtener la interfaz
-            InterfazGrafica gui = factory.crearInterfaz();
+            // Se crea el Cliente inyectándole la fábrica (México o Europa)
+            Cliente cliente = new Cliente(factory);
 
-            Stage stage = new Stage();
-            stage.setScene(new Scene(gui.cargarVista()));
-            stage.setTitle("Sistema RestWare");
-            stage.show();
+            // El cliente internamente llamará a interfaz.cargarVista(this)
+            Parent vista = cliente.obtenerVista();
 
-            // Se pasa el reporte al controlador de la nueva ventana
-            // pero de forma genérica para no romper el patrón.
+            if (vista != null) {
+                Stage stage = new Stage();
+                Scene scene = new Scene(vista, 360, 470);
+
+                stage.setScene(scene);
+                stage.setTitle("Sistema RestWare - " + factory.getClass().getSimpleName());
+                stage.show();
+            }
+
         } catch (Exception e) {
+            System.err.println("Error al abrir la región.");
             e.printStackTrace();
         }
     }
