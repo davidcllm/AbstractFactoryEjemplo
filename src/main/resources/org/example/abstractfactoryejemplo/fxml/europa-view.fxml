@@ -16,7 +16,7 @@
 
     <Label styleClass="header-label" text="Reportes RestWare Europa" />
 
-    <Label text="Ingresos del mes ($)" />
+    <Label text="Ingresos del mes (€)" />
     <TextField fx:id="tfIngresosEuropa" promptText="Ingrese el monto" />
 
     <Label text="Ingrese costos de operación y gastos" />
