@@ -24,7 +24,7 @@
 
     <Separator />
 
-    <Label text="Porcentaje de IVA en Europa: 20%" />
+    <Label text="Porcentaje de impuestos en Europa: 35%" />
 
     <Button mnemonicParsing="false" onAction="#onCalcularUtilidadEuropa" text="Calcular Utilidad" />
 

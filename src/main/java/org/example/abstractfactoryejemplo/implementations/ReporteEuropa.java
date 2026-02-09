@@ -6,6 +6,6 @@ public class ReporteEuropa implements ReporteFinanciero {
     @Override
     public double calcularUtilidad(double ingresos, double costos) {
         double utilidadBruta = ingresos - costos;
-        return utilidadBruta * 0.80; // Se aplica el 20% de IVA
+        return utilidadBruta * 0.65; // Se aplica el 35% de IVA
     }
 }

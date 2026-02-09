@@ -24,7 +24,7 @@
 
     <Separator />
 
-    <Label text="Porcentaje de IVA en México: 16%" />
+    <Label text="Porcentaje de impuestos en México: 32%" />
 
     <Button mnemonicParsing="false" onAction="#onCalcularUtilidadMexico" text="Calcular Utilidad" />
 
